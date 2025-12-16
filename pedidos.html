@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Pedidos | Tienda Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Archivo CSS externo -->
+    <link rel="stylesheet" href="pedidos.css">
+</head>
+<body>
+
+<header>
+    <h1>Tienda Online</h1>
+    <p>Gestión de pedidos</p>
+</header>
+
+<main>
+    <h2>Listado de pedidos</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID Pedido</th>
+                <th>Cliente</th>
+                <th>Total</th>
+                <th>Estado</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Juan Pérez</td>
+                <td>$45.000</td>
+                <td class="estado-pendiente">Pendiente</td>
+                <td>
+                    <button onclick="marcarPagado(this)">Marcar como pagado</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>002</td>
+                <td>María González</td>
+                <td>$89.990</td>
+                <td class="estado-pagado">Pagado</td>
+                <td>
+                    <button disabled>Pagado</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <p>© 2025 - Proyecto Programación Web II, IACC</p>
+</footer>
+
+<!-- Archivo JavaScript externo -->
+<script src="pedidos.js"></script>
+
+</body>
+</html>
 
